@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("head.ejs") %>
+<body>
+    <h1>Assalomu Alaykum</h1>
+    <ul>
+        <% for (let data of datas) { %>
+             <a href="/<%= data.id %>"> <li> <%= data.username %> </li> </a>
+                <% } %>
+    </ul>
+</body>
+
+</html>
